@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timeline App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
  <header>
     <img src="images/Timeline logo.jpg" alt="Timeline logo" width="50"><br>
-    <label>
-      <input type="checkbox" />
-      Toggle theme
-    </label>
+     <div class="theme-toggle">
+    <input type="checkbox" id="theme-switch">
+    <label for="theme-switch">Dark Mode</label>
+  </div>
+
+  
  </header>
-<nav>
+<nav class="year">
+  <button >1975</button>
+  <button>1976</button>
+  <button class="active">1977</button>
+  <button>1978</button>
+  <button>1979</button>
 </nav>
+
+
+
 <main>
     <section id="timeline">
          <article>
@@ -32,15 +43,35 @@
             </figcaption>
             </figure> 
            <footer>
-            <button type="button">
-              Learn More
-            </button>
+             <button class="toggle-btn">Learn More</button>
            </footer>
          </article>
     </section>
 </main>
 
-<div id="modal"></div>
+<div id="modal" class="modal">
+    <p>In 1977, the Apple II, Commodore PET, and TRS-80 didn’t just launch — they exploded onto the scene, kicking off a digital revolution.These weren’t just machines; they were time machines to the future.
+      <ul>
+        <li>Apple II: Came with color graphics (a big deal back then) and the ability to run games that made kids skip homework.</li>
+        <li>Commodore PET: Sleek, all-in-one design with a built-in monitor — the “cool kid” of early computing.</li>
+        <li>TRS-80: Affordable and practical, often found in classrooms, making it the “teacher’s pet” of PCs.</li>
+      </ul>
+    </p>
+    <p>
+     💡 Fun fact: At the time, many people didn’t believe computers belonged in homes. Within a few years, they became the new household appliance — right next to the TV and toaster.
+    </p>
+  </div>
+
+
+<script>
+  const btn = document.querySelector('.toggle-btn');
+  const extraInfo = document.querySelector('.modal');
+
+  btn.addEventListener('click', () => {
+    extraInfo.classList.toggle('show');
+    btn.textContent = extraInfo.classList.contains('show') ? 'Close' : 'Learn More';
+  });
+</script>
 
 </body>
 </html>
