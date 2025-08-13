@@ -13,6 +13,8 @@ A semantic and accessible timeline web app built with HTML.
 ## 🛣 Roadmap
 - [x] Semantic layout
 - [x] Basic accessibility
+- [x] Responsive CSS with Flexbox/Grid
+- [x] Centered event card layout
 - [ ] Timeline markers & modal
-- [ ] Theme toggle styling
+- [ ] Theme toggle styling (JS + CSS)
 - [ ] JS for interactivity
