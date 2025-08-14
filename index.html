@@ -13,22 +13,26 @@
     <input type="checkbox" id="theme-switch">
     <label for="theme-switch">Dark Mode</label>
   </div>
-
-  
  </header>
+ 
 <nav class="year">
-  <button >1975</button>
-  <button>1976</button>
-  <button class="active">1977</button>
-  <button>1978</button>
-  <button>1979</button>
+ <button class="year-btn" data-year="1903">1903</button>
+  <button class="year-btn" data-year="1928">1928</button>
+  <button class="year-btn" data-year="1953">1953</button>
+  <button class="year-btn" data-year="1969">1969</button>
+  <button class="year-btn" data-year="1971">1971</button>
+  <button class="year-btn active" data-year="1977">1977</button>
+  <button class="year-btn" data-year="1990">1990</button>
+  <button class="year-btn" data-year="2004">2004</button>
+  <button class="year-btn" data-year="2022">2022</button>
 </nav>
 
 
 
 <main>
-    <section id="timeline">
-         <article>
+    <section id="timeline" class="flashcard-container">
+      <div id="default-card" style="display:none;">
+        <article>
           <h2><time datetime="1977">1977</time></h2>
             <h3>Introduction of the First Personal Computer</h3>
             <figure>
@@ -43,35 +47,22 @@
             </figcaption>
             </figure> 
            <footer>
-             <button class="toggle-btn">Learn More</button>
+             <button class="toggle-btn" data-more="In 1977, the Apple II, Commodore PET, and TRS-80 didn’t just launch — they exploded onto the scene, kicking off a digital revolution. These weren’t just machines; they were time machines to the future.">Learn More</button>
            </footer>
          </article>
+      </div>
     </section>
 </main>
 
 <div id="modal" class="modal">
-    <p>In 1977, the Apple II, Commodore PET, and TRS-80 didn’t just launch — they exploded onto the scene, kicking off a digital revolution.These weren’t just machines; they were time machines to the future.
-      <ul>
-        <li>Apple II: Came with color graphics (a big deal back then) and the ability to run games that made kids skip homework.</li>
-        <li>Commodore PET: Sleek, all-in-one design with a built-in monitor — the “cool kid” of early computing.</li>
-        <li>TRS-80: Affordable and practical, often found in classrooms, making it the “teacher’s pet” of PCs.</li>
-      </ul>
-    </p>
-    <p>
-     💡 Fun fact: At the time, many people didn’t believe computers belonged in homes. Within a few years, they became the new household appliance — right next to the TV and toaster.
-    </p>
+    <div class="modal-content">
+    
+    <p id="modal-text"></p>
+     <button class="close">Close</button>
+  </div>
   </div>
 
-
-<script>
-  const btn = document.querySelector('.toggle-btn');
-  const extraInfo = document.querySelector('.modal');
-
-  btn.addEventListener('click', () => {
-    extraInfo.classList.toggle('show');
-    btn.textContent = extraInfo.classList.contains('show') ? 'Close' : 'Learn More';
-  });
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
