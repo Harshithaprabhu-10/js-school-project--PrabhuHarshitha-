@@ -8,6 +8,11 @@ body {
   padding: 20px;
 }
 
+body.dark-theme {
+    background-color: #121212;
+    color: white;
+  }
+
 header {
   display: flex;
   align-items: center;
@@ -16,6 +21,16 @@ header {
   color: white;
   padding: 10px 20px;
   border-bottom: 1px solid #444;
+}
+
+body.dark-theme header{
+  background-color: white;
+  color: black;
+}
+
+body.dark-theme header img{
+   border: 1px solid black;
+   background-color: #121212;
 }
 
 header img {
@@ -88,6 +103,20 @@ nav.year::after {
   background: #333;
 }
 
+body.dark-theme nav.year {
+  border-bottom-color: #444;
+}
+
+body.dark-theme nav.year button {
+  color: white;
+}
+
+body.dark-theme nav.year button.active {
+  color: #4cafef;
+}
+
+
+
 #timeline {
   display: flex;
   justify-content: center;
@@ -108,12 +137,20 @@ article h2 {
   color: #333;
 }
 
+body.dark-theme{
+  color: black;
+}
+
 figure {
   margin: 0;
 }
 
 figure img {
-  width: 100%;
+  width: 600px;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
   border-radius: 4px;
 }
 
@@ -150,12 +187,25 @@ footer button:hover {
   padding: 0 1rem;
   margin-top: 0.5rem;
 }
+body.dark-theme .modal{
+  color: black;
+}
 
 .modal.show {
   max-height: 300px;
   padding: 1rem;
 }
 
+.close {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
 .toggle-btn {
   background: #0077cc;
   color: white;

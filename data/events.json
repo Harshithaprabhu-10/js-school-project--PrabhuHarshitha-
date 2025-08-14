@@ -1,0 +1,75 @@
+[
+ 
+  {
+    "year": "1903",
+    "title": "First Powered Flight",
+    "description": "The Wright brothers, Orville and Wilbur, achieved the first successful powered flight in Kitty Hawk, USA, with their aircraft Flyer.",
+     "image": "images/Flight.jpeg",
+    "category": "Aviation",
+    "moreInfo": "The flight lasted only 12 seconds and covered about 120 feet. It marked the beginning of modern aviation and inspired future aerospace innovations. The Wright brothers built their own engine to power the aircraft. Their achievement laid the foundation for military, commercial, and personal air travel."
+  },
+
+  {
+    "year": "1928",
+    "title": "Discovery of Penicillin",
+    "description": "Alexander Fleming discovered that the mold Penicillium notatum could kill harmful bacteria, leading to the creation of penicillin, the first true antibiotic.",
+    "image": "images/penicillin.jpg",
+    "category": "Medicine",
+     "moreInfo": "This discovery revolutionized medicine by providing a cure for many deadly infections. Penicillin saved millions of lives during World War II. It paved the way for the development of a wide range of antibiotics. Fleming’s work is considered one of the most important medical breakthroughs in history."
+  },
+
+  {
+    "year": "1953",
+    "title": "Discovery of DNA double-helix ",
+    "description": "James Watson and Francis Crick discovered that DNA has a double-helix structure, explaining how genetic information is stored and copied in living things.",
+    "image": "images/DNA.jpg",
+    "category": "Genetics",
+     "moreInfo": "The discovery was based on X-ray diffraction images by Rosalind Franklin. It laid the foundation for modern genetics and biotechnology. Understanding DNA's structure opened the door to genetic engineering. This breakthrough also advanced forensic science, ancestry tracking, and disease research."
+  
+  },
+
+  {
+    "year": "1969",
+    "title": "Moon Landing",
+    "description": "Neil Armstrong became the first person to walk on the moon.",
+    "image": "images/moon.jpg",
+    "category": "Space",
+    "moreInfo": "The Apollo 11 mission lasted over 8 days and returned with lunar rock samples. Armstrong's words 'That's one small step for man...' became legendary. The mission demonstrated the technological power of the space race era. It also inspired generations to pursue careers in science and engineering."
+  },
+
+{
+    "year": "1971",
+    "title": "Invention of email",
+    "description": "Ray Tomlinson sent the first email between two computers using the “@” symbol to separate user and machine names.",
+    "image": "images/Gmail.jpg",
+    "category": "Information Technology",
+    "moreInfo": "This innovation transformed global communication forever. The use of '@' became a universal standard in email addresses. Email became a key part of both personal and business communication. It marked the beginning of the digital communication era."
+  },
+
+  {
+    "year": "1990",
+    "title": "Launch of Hubble Space Telescope ",
+    "description": "NASA launched the Hubble Space Telescope into orbit, giving humanity incredibly detailed images of space.",
+    "image": "images/Hubble.jpg",
+    "category": "Astronomy",
+    "moreInfo": "Hubble has provided images of galaxies billions of light-years away. It has helped scientists understand the age and expansion of the universe. The telescope continues to contribute to major space discoveries. Its legacy will influence astronomy for decades to come."
+  },
+
+ {
+    "year": "2004",
+    "title": "Launch of Facebook",
+    "description": "Mark Zuckerberg and his team launched Facebook, initially for Harvard students before expanding worldwide.",
+    "image": "images/Hubble.jpg",
+    "category": "Social networking & communication.",
+    "moreInfo": "It became one of the largest social media platforms, connecting billions of people. Facebook influenced politics, marketing, and social interactions. It has also faced scrutiny over privacy and misinformation. Despite challenges, it remains a dominant force in online networking."
+  },
+
+  {
+    "year": "2022",
+    "title": "First Plants Grown in Lunar Soil",
+    "description": "Scientists grew plants in lunar soil collected during Apollo missions, a breakthrough for future space farming.",
+    "image": "images/Plants.jpg",
+    "category": "Astrobiology",
+    "moreInfo": "The experiment showed that lunar soil could support plant life with some limitations. This is a crucial step for sustaining life on future Moon missions. Scientists observed slower growth compared to Earth soil. The research paves the way for long-term human presence on the Moon."
+  }
+]
