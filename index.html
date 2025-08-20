@@ -4,65 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timeline App</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <header>
-    <img src="images/Timeline logo.jpg" alt="Timeline logo" width="50"><br>
-     <div class="theme-toggle">
-    <input type="checkbox" id="theme-switch">
-    <label for="theme-switch">Dark Mode</label>
-  </div>
- </header>
- 
-<nav class="year">
- <button class="year-btn" data-year="1903">1903</button>
-  <button class="year-btn" data-year="1928">1928</button>
-  <button class="year-btn" data-year="1953">1953</button>
-  <button class="year-btn" data-year="1969">1969</button>
-  <button class="year-btn" data-year="1971">1971</button>
-  <button class="year-btn active" data-year="1977">1977</button>
-  <button class="year-btn" data-year="1990">1990</button>
-  <button class="year-btn" data-year="2004">2004</button>
-  <button class="year-btn" data-year="2022">2022</button>
-</nav>
-
-
-
-<main>
-    <section id="timeline" class="flashcard-container">
-      <div id="default-card" style="display:none;">
-        <article>
-          <h2><time datetime="1977">1977</time></h2>
-            <h3>Introduction of the First Personal Computer</h3>
-            <figure>
-                <img src="images/computer.jpg" alt="Computer" width="600">
-            <figcaption>
-            <p>
-            The first personal computer, introduced in 1977, revolutionized the way people interacted with technology.
-            </p>
-            <p>
-            They democratized access to technology, enabling innovation and reshaping how people worked, communicated, and lived.
-           </p>
-            </figcaption>
-            </figure> 
-           <footer>
-             <button class="toggle-btn" data-more="In 1977, the Apple II, Commodore PET, and TRS-80 didn’t just launch — they exploded onto the scene, kicking off a digital revolution. These weren’t just machines; they were time machines to the future.">Learn More</button>
-           </footer>
-         </article>
-      </div>
-    </section>
-</main>
-
-<div id="modal" class="modal">
-    <div class="modal-content">
-    
-    <p id="modal-text"></p>
-     <button class="close">Close</button>
-  </div>
-  </div>
-
-<script type="module" src="./dist/index.js"></script>
-
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
 </body>
 </html>
