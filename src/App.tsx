@@ -10,7 +10,6 @@ const App = () => {
   const [showModal, setShowModal] = useState<boolean>(false);
 
   useEffect(() => {
-    // Load default event (prefer 1977, else fallback to first in list)
     const defaultEvent =
       eventData.find(e => String(e.year) === '1977') || eventData[0];
     if (defaultEvent) {
@@ -23,7 +22,7 @@ const App = () => {
     setCurrentYear(String(year));
     const event = eventData.find(e => String(e.year) === String(year));
     setSelectedEvent(event || null);
-    setShowModal(false); // close modal if switching years
+    setShowModal(false); 
   };
 
   const handleOpenModal = () => {

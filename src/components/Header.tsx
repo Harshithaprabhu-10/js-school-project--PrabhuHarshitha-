@@ -1,7 +1,6 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { Moon, Sun } from 'lucide-react';
 
-// Define context type
 interface ThemeContextType {
   isDarkMode: boolean;
   toggleTheme: () => void;
@@ -12,7 +11,6 @@ const ThemeContext = createContext<ThemeContextType>({
   toggleTheme: () => {},
 });
 
-// Define props type for the ThemeProvider
 interface ThemeProviderProps {
   children: ReactNode;
 }
@@ -39,7 +37,6 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 
 export const useTheme = () => useContext(ThemeContext);
 
-// Header Component
 const Header = () => {
   const { isDarkMode, toggleTheme } = useTheme();
 
