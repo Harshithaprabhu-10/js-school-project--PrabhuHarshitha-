@@ -261,3 +261,26 @@ body.dark-theme .modal{
     max-width: 700px;
   }
 }
+
+:focus-visible {
+  outline: 3px solid #1f6feb;
+  outline-offset: 2px;
+}
+
+.year-btn {
+  color: #111;
+}
+
+.year-btn.active,
+footer .toggle-btn {
+  background: #0a58ca; 
+  color: #fff;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  display: grid;
+  place-items: center;
+}
